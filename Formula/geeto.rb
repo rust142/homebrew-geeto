@@ -10,14 +10,14 @@ class Geeto < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rust142/geeto/releases/download/v0.6.1/geeto-mac"
-      sha256 "ecb2bf249bd628690d0d5cdcfc04e0f97aa3d8609ead232ddf4f47d322d49baf"
+      sha256 "8a2923e5c880eebb098339022f82e9f2b4f24b80c2cc4394721007657db2fc9b"
 
       def install
         bin.install "geeto-mac" => "geeto"
       end
     elsif Hardware::CPU.arm?
       url "https://github.com/rust142/geeto/releases/download/v0.6.1/geeto-mac-arm64"
-      sha256 "98c0e630eba8b36ccec42d992f30977ea4d816864b9486399b79e27f60232045"
+      sha256 "64f105e95e0cf35be8097435058f8864f8073813bf682a72bb7c4578f5cce6c0"
 
       def install
         bin.install "geeto-mac-arm64" => "geeto"
@@ -28,14 +28,14 @@ class Geeto < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/rust142/geeto/releases/download/v0.6.1/geeto-linux"
-      sha256 "33f52a6b1c263981d3c07da4af4a16a3ae280dcbd28a5deec20e3f0a8f3b797c"
+      sha256 "a7f9fecff0ce2b6db3144e6f053a154d302a0e0e28f1811f28d3f034a2fe09e1"
 
       def install
         bin.install "geeto-linux" => "geeto"
       end
     elsif Hardware::CPU.arm?
       url "https://github.com/rust142/geeto/releases/download/v0.6.1/geeto-linux-arm64"
-      sha256 "ff5b9b850f883499cae47567c5929e2949623b6f5e74cce94f8be281064dae9b"
+      sha256 "365990bd808e4a9b19cd05dbe692ecb37e87358948bec8e53d0b27b0518bae0f"
 
       def install
         bin.install "geeto-linux-arm64" => "geeto"
