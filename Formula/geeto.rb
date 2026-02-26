@@ -4,20 +4,20 @@
 class Geeto < Formula
   desc "AI-powered Git workflow automation CLI"
   homepage "https://github.com/rust142/geeto"
-  version "0.6.5"
+  version "0.6.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.5/geeto-mac"
-      sha256 "3af460d2a2032e6efc69900759cc2d80508320427c58c39f511e5d638622be8b"
+      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-mac"
+      sha256 "6b417898d33f1b15590ace7ddf400b0e53a89933219e646a08e5864b1ee0c264"
 
       def install
         bin.install "geeto-mac" => "geeto"
       end
     elsif Hardware::CPU.arm?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.5/geeto-mac-arm64"
-      sha256 "a202e3baeefaf7e3f7669e08c67909437984a481b9fd14b6ea79f827d8b2b805"
+      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-mac-arm64"
+      sha256 "b723667ea59d3e03d8726b761bee42087e600363ff47c69e1a611156a46a6047"
 
       def install
         bin.install "geeto-mac-arm64" => "geeto"
@@ -27,15 +27,15 @@ class Geeto < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.5/geeto-linux"
-      sha256 "785212432080d96915dba184fa10abaa5821f86372553f8449dbead3ca173249"
+      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-linux"
+      sha256 "53aa7012487bbec47a2afe1a4de5d301b824af8e7c0c6100df257d1b319eec96"
 
       def install
         bin.install "geeto-linux" => "geeto"
       end
     elsif Hardware::CPU.arm?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.5/geeto-linux-arm64"
-      sha256 "5e9dedfa2c8c2ba7689318d3a2f372ca1ecbc3aafee0a16faafe00350c141bab"
+      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-linux-arm64"
+      sha256 "b4106e46a301e71a0f70b5474e6ce34181f0e2656bd0abe3cb5b4cc9da9c18be"
 
       def install
         bin.install "geeto-linux-arm64" => "geeto"
