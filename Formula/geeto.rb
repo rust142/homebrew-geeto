@@ -4,20 +4,20 @@
 class Geeto < Formula
   desc "AI-powered Git workflow automation CLI"
   homepage "https://github.com/rust142/geeto"
-  version "0.6.6"
+  version "0.7.0-alpha.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-mac"
-      sha256 "6b417898d33f1b15590ace7ddf400b0e53a89933219e646a08e5864b1ee0c264"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.1/geeto-mac"
+      sha256 "73b3514fa1ded1ffcb7c5bcc83cedbf513b0a79c41c14bcb69ced3b769419508"
 
       def install
         bin.install "geeto-mac" => "geeto"
       end
     elsif Hardware::CPU.arm?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-mac-arm64"
-      sha256 "b723667ea59d3e03d8726b761bee42087e600363ff47c69e1a611156a46a6047"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.1/geeto-mac-arm64"
+      sha256 "e8b09f16acaa5ae8bd9178afe176668f4ad2c38a02aea64630879faa53d811c0"
 
       def install
         bin.install "geeto-mac-arm64" => "geeto"
@@ -27,15 +27,15 @@ class Geeto < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-linux"
-      sha256 "53aa7012487bbec47a2afe1a4de5d301b824af8e7c0c6100df257d1b319eec96"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.1/geeto-linux"
+      sha256 "1e762f6f6095d3e86de3a3634d4eeb7db07077a7c08fcf7130189052ffebd29e"
 
       def install
         bin.install "geeto-linux" => "geeto"
       end
     elsif Hardware::CPU.arm?
-      url "https://github.com/rust142/geeto/releases/download/v0.6.6/geeto-linux-arm64"
-      sha256 "b4106e46a301e71a0f70b5474e6ce34181f0e2656bd0abe3cb5b4cc9da9c18be"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.1/geeto-linux-arm64"
+      sha256 "5576611f22122ea4dd72d69806b04228895ed734dbdc0eb9c7b21484997c657e"
 
       def install
         bin.install "geeto-linux-arm64" => "geeto"
