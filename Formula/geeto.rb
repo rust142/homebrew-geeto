@@ -4,20 +4,20 @@
 class Geeto < Formula
   desc "AI-powered Git workflow automation CLI"
   homepage "https://github.com/rust142/geeto"
-  version "0.7.0-alpha.2"
+  version "0.7.0-alpha.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.2/geeto-mac"
-      sha256 "063ad9aff0f80e8bd4ada726fa61f9cfd11c82e569d86b6d10d895a165f1b74c"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.3/geeto-mac"
+      sha256 "1400c62ebcba746dee876bbeb1bd62a9a724d026eb15b14562bdc9fa28c52ef1"
 
       def install
         bin.install "geeto-mac" => "geeto"
       end
     elsif Hardware::CPU.arm?
-      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.2/geeto-mac-arm64"
-      sha256 "5dbe2b4217a59de2bdced52595ebda33549e5a75389d6ba90cc825131d3797f4"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.3/geeto-mac-arm64"
+      sha256 "8ec29b8f864d3ef329a4823180c240fb704d840970625850b50a2930cc6e0495"
 
       def install
         bin.install "geeto-mac-arm64" => "geeto"
@@ -27,15 +27,15 @@ class Geeto < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.2/geeto-linux"
-      sha256 "13c09268d837231c6b5830eeb57c137894528e6fe2776c6f574c88f2dbc33da1"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.3/geeto-linux"
+      sha256 "cdf3e25eb1e4142c1f7f40e3177dcd1ee11a4b6667da5c0102c8780b3212315b"
 
       def install
         bin.install "geeto-linux" => "geeto"
       end
     elsif Hardware::CPU.arm?
-      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.2/geeto-linux-arm64"
-      sha256 "962c4d2aa017297330684334aad8e9d0128256ff866a937529e3e282304fc4d2"
+      url "https://github.com/rust142/geeto/releases/download/v0.7.0-alpha.3/geeto-linux-arm64"
+      sha256 "6abb1ab6b4a69257b275da627dfa7cc1438ce370e180ae07679e10b8552ac392"
 
       def install
         bin.install "geeto-linux-arm64" => "geeto"
